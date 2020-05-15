@@ -1,0 +1,30 @@
+server:
+  port: 8887
+  servlet:
+    context-path:
+spring:
+  application:
+    name: msg_sys
+  data:
+    mongodb:
+#      uri: mongodb:admin:admin//localhost:27017/msg_sys
+      host: localhost
+      port: 27017
+      database: msg_sys
+      username: root
+      password: root
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+logging:
+  level:
+    net.chensee: debug
+
+pageNumber: 1
+pageSize: 30
+
+#httpClient 外部请求
+erpUrl: http://192.168.2.201:8888
+
+
+

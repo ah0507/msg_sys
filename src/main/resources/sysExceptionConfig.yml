@@ -1,0 +1,14 @@
+#系统常见异常配置
+sys:
+  otherException: 程序未知异常!
+  customException:
+    java:
+      lang:
+        NullPointerException: 空指针异常！
+        IndexOutOfBoundsException: 数组越界异常！
+    org:
+      springframework:
+        web:
+          bind:
+            MissingServletRequestParameterException: get请求参数${}异常！
+
